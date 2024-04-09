@@ -1,0 +1,10 @@
+{
+  "url": "这里写正向服务器地址", //如果使用正向WS则填写在这里
+  "port": 4000, // 如果使用反向WS则需要指定监听端口
+  "token": "token", //如果设置了Token
+  "reconnect": true, // 是否开启自动重连 (默认开启) 正向WS有效
+  "reconnect_delay_time": 10, // 重连间隔时间 (默认10秒)
+  "reconnect_try_times": 3, // 重连尝试次数 (默认3次)
+  "extra_processor_package": [], // 额外需要扫描的处理器包路径 List<String> 类型
+  "strict": true // 严格模式 (默认开启) 如果开启初始化事件处理器遇到任何错误都会直接结束进程
+}

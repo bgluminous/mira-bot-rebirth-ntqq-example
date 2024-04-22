@@ -1,17 +1,17 @@
 package com.example.processor;
 
 import ink.on.central.bot.BotInstance;
-import ink.on.central.bot.annotation.MiraBotProcessor;
+import ink.on.central.bot.annotation.MiraBotListener;
 import ink.on.central.bot.entity.event.message.GroupMessageEvent;
-import ink.on.central.bot.template.message.PTGroupMessage;
+import ink.on.central.bot.template.message.LTGroupMessage;
 import ink.on.central.bot.utils.MessageBuilder;
 import ink.on.central.bot.utils.MessageCheckUtil;
 
-// 这个注解是必要的用于表示这是一个事件处理器，有这个注解才会被扫描和注册
-@MiraBotProcessor
+// 这个注解是必要的用于表示这是一个事件监听器，有这个注解才会被扫描和注册
+@MiraBotListener
 @SuppressWarnings("unused")
-// 继承PTGroupMessage说明这个处理器用于处理群消息
-public class GroupMsgProcessor extends PTGroupMessage {
+// 继承PTGroupMessage说明这个监听器用于处理群消息
+public class GroupMsgProcessor extends LTGroupMessage {
 
   // 构造器 一般不用动
   public GroupMsgProcessor(BotInstance instance) {
